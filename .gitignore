@@ -1,0 +1,12 @@
+venv/
+__pycache__/
+
+.DS_Store
+
+*.swp
+
+variant_data/*.json
+
+clinvar.vcf.gz
+
+final_variant_clinvar_data.json

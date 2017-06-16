@@ -1,0 +1,35 @@
+{
+    "Allele Frequency": "", 
+    "Build 37 Chromosome": "", 
+    "Build 37 Position": "", 
+    "Build 37 Variant Allele": "", 
+    "Build37 coordinates:": [], 
+    "Clinical Importance": "", 
+    "Condition Tags": [
+        ""
+    ], 
+    "Evidence": "", 
+    "Gene Symbol": "", 
+    "Impact": "", 
+    "Inheritance": "", 
+    "PMID Count": null, 
+    "PMID List": [
+        ""
+    ], 
+    "Scores": {
+        "Case/Control": "", 
+        "Computational": "", 
+        "Familial": "", 
+        "Functional": null, 
+        "Penetrance": null, 
+        "Severity": null, 
+        "Treatability": null
+    }, 
+    "Summary": "", 
+    "URL": "", 
+    "Variant Name": "", 
+    "Variant Page": "", 
+    "dbSNP IDs": [
+        ""
+    ]
+}
