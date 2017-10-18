@@ -1,1 +1,1 @@
-vcf2clinvar==0.1.4.2
+-e git+git@github.com:rkty13/vcf2clinvar.git@dba6ae0b254730088934cbe1c1ad60fc1688be02#egg=vcf2clinvar

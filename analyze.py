@@ -57,6 +57,15 @@ def _generate_gennotes_url(row):
 def _match_variant_clinvar(variant, row):
    pass 
 
+def find_clinvar_in_variant(variant_data):
+    data = []
+    for i in range(len(variant_data)):
+        if 'Summary' in variant_data[i] and \
+                'clinvar_data' not in variant_data[i] and \
+                '/clinvar/RCV' in variant_data[i]['Summary']:
+            data.append(variant_data[i])
+    return data
+
 def associate_variant_clinvar(clinvar_data, variant_data):
     print('Associating variant data...')
     modified_variant_data = deepcopy(variant_data)
@@ -95,3 +104,7 @@ if __name__ == '__main__':
     associated_variant_data = associate_variant_clinvar(clinvar_data, variant_data)
     with open('final_variant_clinvar_data.json', 'w') as f:
         json.dump(associated_variant_data, f, indent=4)
+    variants = find_clinvar_in_variant(associated_variant_data)
+    print(len(variants))
+    with open('clinvar_in_variant.json' ,'w') as f:
+        json.dump(variants, f, indent=4)
